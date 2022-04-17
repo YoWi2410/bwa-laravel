@@ -18,7 +18,7 @@ class CreateTableCamps extends Migration
             $table->string('title', 100);
             $table->string('slug', 100);
             $table->integer('price')->unsigned();
-            $table-timestamps();
+            $table->timestamps();
             $table->softDeletes();
         });
     }
