@@ -21,7 +21,6 @@
                         <a class="nav-link" href="#">Business</a>
                     </li>
                 </ul>
-
                 @auth
                 <div class="d-flex user-logged nav-item dropdown no-arrow">
                     <a href="#" role="button" id="dropdwonMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,7 +28,7 @@
                         <img src="{{Auth::user()->avatar}}" class="user-photo" alt="">
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="right:0; left:auto">
                             <li>
-                                <a href="#" class="dropdown-item">My Dashboard</a>
+                                <a href="{{route('dashboard')}}" class="dropdown-item">My Dashboard</a>
                             </li>
                             <li>
                                 <a href="#" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
